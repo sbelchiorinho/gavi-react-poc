@@ -3,10 +3,10 @@ import React from 'react';
 
 export default class Footer extends React.Component {
   render() {
-    var year = (new Date()).getFullYear();
+    let year = (new Date()).getFullYear();
     return (
       <footer className={styles.footer}>
-        &copy; Your Company&nbsp;{year}
+        &copy; blue-infinity&nbsp;{year}
       </footer>
     );
   }

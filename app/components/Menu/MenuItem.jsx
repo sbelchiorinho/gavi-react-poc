@@ -8,18 +8,18 @@ export default class MenuItem extends Component {
     item: PropTypes.object.isRequired
   };
 
-  onItemClick = (e) => {
-    e.preventDefault();
-    window.alert('You clicked ' + this.props.item.label);
-  }
-
   render() {
     return (
       <li key={'menu-item-' + this.props.item.id}>
-        <a href="#" onClick={this.onItemClick}>
+        <a href="#" onClick={this._onItemClick}>
           {this.props.item.label}
         </a>
       </li>
     );
+  }
+
+  _onItemClick = (e) => {
+    e.preventDefault();
+    window.alert('You clicked ' + this.props.item.label);
   }
 }

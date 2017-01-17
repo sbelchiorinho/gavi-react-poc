@@ -15,12 +15,22 @@ export default class Menu extends Component {
   };
 
   render() {
+    let listItems = this._getItems();
+    let listItemsCount = this.props.items.length;
     return (
-      <ul className={styles.menu}>
-        {this.props.items.map((item) => {
-          return (<MenuItem item={item} />);
-        }, this)}
-      </ul>
+      <div className="list-wrapper">
+        <h4>{listItemsCount} items</h4>
+        <ul className={styles.menu}>
+          {listItems}
+        </ul>
+      </div>      
     );
   }
+
+  _getItems(){
+    return this.props.items.map((item) => {
+        return (<MenuItem item={item} />);
+    }, this);
+  }
+
 }

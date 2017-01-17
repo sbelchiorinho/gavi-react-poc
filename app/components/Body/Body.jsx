@@ -3,11 +3,9 @@ import React from 'react';
 import Menu from '../Menu/Menu';
 
 let { PropTypes } = React;
-let currentDate = new Date();
 
-export default class Body extends React.Component {
 
- 
+export default class Body extends React.Component { 
 
   static defaultProps = {
     items: []
@@ -18,11 +16,11 @@ export default class Body extends React.Component {
   };
 
   render() {
+    let currentDate = new Date();
     return (
       <div className={styles.body}>
         <h1 className={styles.header}>GAVI - Country Pages</h1>
         <p>This project consists in a proof of concept for GAVI - Country Pages, powered by React, ES6 &amp; webpack.</p>
-        <p>{currentDate}</p>
         <p>Here is some example data:</p>
         <Menu items={this.props.items} />
         <h2>Getting started</h2>
