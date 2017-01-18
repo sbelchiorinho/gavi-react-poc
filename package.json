@@ -2,7 +2,10 @@
   "name": "react-seed",
   "version": "0.0.16",
   "description": "Seed project for React apps using ES6 & webpack.",
-  "repository": "https://github.com/badsyntax/react-seed",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/badsyntax/react-seed.git"
+  },
   "license": "MIT",
   "config": {
     "buildDir": "./build",
@@ -27,8 +30,14 @@
   "dependencies": {
     "classnames": "^2.1.3",
     "flux": "^2.0.3",
+    "material-ui": "^0.16.7",
     "normalize.css": "^3.0.3",
-    "react": "^0.13.3"
+    "react": "^15.4.2",
+    "react-addons-create-fragment": "^15.4.2",
+    "react-addons-shallow-compare": "^15.4.2",
+    "react-addons-transition-group": "^15.4.2",
+    "react-dom": "^15.3.2",
+    "react-tap-event-plugin": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
@@ -57,6 +66,7 @@
     "karma-sourcemap-loader": "^0.3.5",
     "karma-webpack": "^1.5.1",
     "lodash": "^3.10.0",
+    "material-ui": "^0.16.7",
     "mocha": "^2.2.5",
     "mocha-loader": "^0.7.1",
     "node-libs-browser": "^0.5.2",
@@ -126,5 +136,11 @@
       "react/self-closing-comp": 1,
       "react/wrap-multilines": 1
     }
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/badsyntax/react-seed/issues"
+  },
+  "homepage": "https://github.com/badsyntax/react-seed#readme",
+  "main": "dev-server.js",
+  "author": ""
 }
